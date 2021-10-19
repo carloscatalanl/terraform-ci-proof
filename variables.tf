@@ -9,19 +9,19 @@ variable "location" {
 }
 
 variable "vnet-name" {
-  type=string
-  description="Enter a Virtual Network Name:"
+  type        = string
+  description = "Enter a Virtual Network Name:"
 }
 variable "vnet-as" {
-  type = list
+  type        = list(any)
   description = "Enter a Virtual Network Adress Space:"
 }
 
 variable "subnet-name" {
-  type=string
-  description="Enter a Subnet Name:"
+  type        = string
+  description = "Enter a Subnet Name:"
 }
 variable "subnet-ap" {
-  type = list
+  type        = list(any)
   description = "Enter a Subnet Adress Prefixes:"
 }
